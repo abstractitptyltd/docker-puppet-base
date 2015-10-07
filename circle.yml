@@ -1,7 +1,7 @@
 ## update version on every release
 machine:
   environment:
-    version: 0.1.1
+    version: 0.1.2
   services:
     - docker
 
@@ -9,6 +9,10 @@ dependencies:
   override:
     - docker info
     - docker build -t abstractit/puppet-base:$version .
+
+test:
+  override:
+    - docker run -d --name puppettest abstractit/puppet-base:$version
 
 deployment:
   hub:
