@@ -1,10 +1,10 @@
 FROM centos:7
 MAINTAINER Abstract IT Pty Ltd <dev@abstractit.com.au>
 LABEL vendor="Abstract IT Pty Ltd" \
-  au.com.abstractit.version="0.1.3" \
-  au.com.abstractit.release-date="2015-10-08"
+  au.com.abstractit.version="0.1.4" \
+  au.com.abstractit.release-date="2015-11-06"
 
-ENV PUPPET_VERSION="3.8.3" FACTER_VERSION="2.4.4" HIERA_VERSION="1.3.4"
+ENV PUPPET_VERSION="3.8.4" FACTER_VERSION="2.4.4" HIERA_VERSION="1.3.4"
 
 # Setup repos update centos and install packages
 RUN rpm --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 \

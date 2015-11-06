@@ -1,7 +1,7 @@
 ## update version on every release
 machine:
   environment:
-    version: 0.1.3
+    version: 0.1.4
   services:
     - docker
 
